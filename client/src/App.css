@@ -1,0 +1,199 @@
+#root {
+  width: 100%;
+ 
+  padding: 0px;
+  text-align: left;
+}
+
+/*makes page fill full height of screen*/
+/*removes default browser margin*/
+html, body, #root{
+  height: 100%;
+  margin: 0;
+}
+
+.appShell{
+  min-height: 100vh;      /*always at least full screen height */
+  background: #111827   /*dark background color */
+}
+
+.content{
+  padding-top: 80px;      /*pushes content down so navbar doesnt cover it */
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+
+  display: flex;      /*stack children in flex layout*/
+  flex-direction: column;      /*vertical stacking */
+  gap: 24px;      /*space b/w sections */
+}
+
+.panelCard{
+  background: #9dbeca;      /*card color */
+  border-radius: 17px;      /*rounded corners */
+  padding: 16px;      /*inside spacing*/
+}
+
+.page{
+  display: flex;
+  min-height: 100vh;
+
+}
+
+.panel{
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  min-width: 0;
+  min-height: 100vh;
+  background: #111827;
+}
+
+
+.left{
+  border-right: 1px solid #e5e7eb;
+  
+  
+}
+
+.card{
+  background: #9dbeca;
+  border-radius: 17px;
+  min-height:100vh;
+
+
+}
+
+.label{
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  margin-top: 5px;
+  font-family: "Lucida Caligraphy", "Lucida Handwriting", Cursive;
+  text-decoration: underline;
+}
+
+.small_label{
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  margin-top: 5px;
+  font-family: "Lucida Caligraphy", "Lucida Handwriting", Cursive;
+  vertical-align: text-top;
+  
+}
+
+.input{
+  width: 100%;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 16px;
+  margin-top: 10px;
+  background: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  color: black;
+}
+
+.textarea{
+  width: 100%;
+  min-height: 250px;
+  height: 40vh;
+  border-radius: 10px;
+  resize: none;
+  font-size: 16px;
+  background: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
+  font-weight: 900;
+  color: black;
+}
+
+.input:focus, .textarea:focus{
+  border-color: #6366f1;
+
+}
+
+.actions{
+  display: flex;
+  gap: 10px;
+  font-family: 'Times New Roman', Times, serif;
+
+  
+}
+
+.button:disabled{
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.secondary{
+  background: grey;
+}
+
+.space{
+  
+  margin: 15px;
+}
+
+.buttonstyling{
+  align-items:center;
+  justify-content:center;
+  margin-top: 16px;
+  font-family: "Lucida Caligraphy", "Lucida Handwriting", Cursive;
+
+}
+
+.roundbutton{
+  border-radius: 18px;
+}
+
+.navlayout{
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);      /*makes navbar standout */
+  z-index: 2000;      /*ensure navbar stays above content */
+  background: #9fbac4;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navlinks{
+  gap: 16px;
+}
+
+.summarymargins{
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.navlayout .navbar-brand,
+.navlayout .nav-link{
+  color: black;
+  font-family: "Lucida Caligraphy", "Lucida Handwriting", Cursive;
+  font-weight: 700;
+}
+.navlayout .nav-link:hover{
+  color: #5480cd;
+}
+
+.nameRow{
+  display: flex;       /*puts first + last name side by side */
+  gap: 12px;           /*space b/w field*/
+  width: 100%;
+}
+
+.nameRow .input{
+  flex: 1;        /*each input takes equal width */
+  width: auto;
+
+}
+
+.field{
+  flex: 1;
+  display: flex;
+  flex-direction: column;      /*label above input*/
+}
+
