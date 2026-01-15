@@ -44,3 +44,17 @@ server/dist/
 .DS_Store
 
 !server/.env.example
+
+# env
+.env
+server/.env
+client/.env
+client/.env.*
+server/.env.*
+
+# env
+.env
+server/.env
+client/.env
+client/.env.*
+server/.env.*
