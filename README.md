@@ -10,3 +10,6 @@ The project is designed using a client-server model where the frontend and backe
 
 ## [Implementation](implementation.md)
 The application is implemented with separate client and server folders, each with its own dependencies and configuration. Environment variables are used to securely store sensitive values like database credentials and API keys. The project is run locally by starting both the frontend development server and the backend Express server.
+
+
+### [Click Here for Shortly Demonstration!](https://youtu.be/aSD__zfhXDM)
